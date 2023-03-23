@@ -49,11 +49,22 @@ function prezzo(){
 
     let iltuonome = document.getElementById("nomepasseggero").value
 
-    document.querySelector(`.chisei`).innerHTML = `<p>${iltuonome}</p>`
+    document.querySelector(`.chisei`).innerHTML += `<p>${iltuonome}</p>`
 
 
+    //GENERATORI RANDOM DI NUMERI PER CODICE CPT E CARROZZA
     document.querySelector(`.casuale`).innerHTML = Math.floor(Math.random()*10000)+1;
 
     document.querySelector(`.n`).innerHTML = Math.floor(Math.random()*10)+1;
+
+    //STAMPA DELLA CARD PREZZO
+    document.querySelector(`#prezzoTicket`).style.display= "block";
     
+   
 }
+
+
+function refresh(){
+    window.location.reload();
+} 
+
