@@ -20,7 +20,7 @@ Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagi
 */
 
 
-
+``
 // METODO 1
 
 
@@ -40,11 +40,20 @@ function prezzo(){
     console.log(`${prezzoBigliettoIntero}`)
 
     if(eta <= 17){
-        document.getElementById(`prezzoformaumana`).innerHTML = `prezzo ticket:<h1>${childPrice.toFixed(2)}</h1>`
+        document.querySelector(`.costoBiglietto`).innerHTML = `${childPrice.toFixed(2)}`
     }else if(eta >= 65){
-        document.getElementById(`prezzoformaumana`).innerHTML = `prezzo ticket:<h1>${prezzoBigliettoIntero - sconto40percento.toFixed(2)}</h1>`
+        document.querySelector(`.costoBiglietto`).innerHTML = `${prezzoBigliettoIntero - sconto40percento.toFixed(2)}`
     }else{
-        document.getElementById(`prezzoformaumana`).innerHTML = `prezzo ticket:<h1>${prezzoBigliettoIntero.toFixed(2)}</h1>`
+        document.querySelector(`.costoBiglietto`).innerHTML = `${prezzoBigliettoIntero.toFixed(2)}`
     }
+
+    let iltuonome = document.getElementById("nomepasseggero").value
+
+    document.querySelector(`.chisei`).innerHTML = `<p>${iltuonome}</p>`
+
+
+    document.querySelector(`.casuale`).innerHTML = Math.floor(Math.random()*10000)+1;
+
+    document.querySelector(`.n`).innerHTML = Math.floor(Math.random()*10)+1;
     
 }
