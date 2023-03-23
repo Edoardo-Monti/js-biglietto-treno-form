@@ -2,6 +2,6 @@
     display: none;
 }
 
-.bg-primary2{
-    background-color: aqua;
+.border-green{
+    border: 2px solid green;
 }

@@ -8,11 +8,11 @@
     <title>Biglietto del treno</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body class="bg-primary2">
+<body>
     <div class="text-center py-3">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </div>
-    <div class="container mx-auto w-75 rounded bg-light">
+    <div class="container mx-auto w-75 rounded border-green p-3">
 
         <div class="d-flex justify-content-around">
             <div class="mb-3 text-center">
@@ -28,17 +28,17 @@
                 <input type="text" class="form-control" id="eta">
             </div>
         </div>
-        <div class="text-center py-3">
+        <div class="text-center pt-3">
             <button type="submit" class="btn btn-primary" onclick="prezzo()">Genera</button>
             <button type="submit" class="btn btn-primary refresh" onclick="refresh()" >Annulla</button>
         </div>
     </div>
-    <div id="prezzoTicket" class="">
+    <div id="prezzoTicket">
         <div class="text-center py-3">
             <h1>IL TUO BIGLIETTO</h1>
         </div>
         
-        <div class="container mx-auto w-75 rounded bg-light pt-3">
+        <div class="container mx-auto w-75 rounded pt-3 border-green">
             <h3>DETTAGLIO PASSEGGERO</h3>
             <div class="row container">
                 <div class="bg-secondary col-4 p-2 mb-3 chisei">
